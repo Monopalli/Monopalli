@@ -3,6 +3,7 @@ import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import Modal from '@mui/material/Modal';
 import {TextField} from "@mui/material";
+import { uniqueNamesGenerator, Config, adjectives, colors, animals } from 'unique-names-generator';
 
 const style = {
     position: 'absolute',
@@ -16,11 +17,12 @@ const style = {
     p: 4,
 };
 
+
 export default function BasicModal() {
     const [open, setOpen] = React.useState(true);
     const handleOpen = () => setOpen(true);
     const handleClose = () => setOpen(false);
-
+    const randomName = uniqueNamesGenerator({dictionaries: [adjectives, colors, animals]});
     return (
         <div>
             <Modal
@@ -30,8 +32,8 @@ export default function BasicModal() {
             >
                 <Box sx={style}>
                     <h2>Welcome To Monopalli</h2>
-                    <TextField label={'Username'} variant="filled" defaultValue="Kachra"></TextField>
-                    <Button onClick={handleClose}>Enter</Button>
+                    <TextField label={'Username'} variant="filled" defaultValue={randomName}></TextField>
+                    <div><Button onClick={handleClose}>Enter</Button></div>
                 </Box>
             </Modal>
         </div>
