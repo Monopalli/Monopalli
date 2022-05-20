@@ -8,7 +8,7 @@ import styled from "@mui/material/styles/styled";
 const theme = createTheme({
     palette: {
         primary:{ main: "#2EDB4B",
-        contrastText: "#FFFFFF"},
+        contrastText: "#ffffff"},
     },
     shadows: ["none"]
 });

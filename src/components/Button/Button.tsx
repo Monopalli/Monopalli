@@ -5,7 +5,6 @@ import {ButtonProps} from "./types";
 
 
 const StyledButton = styled(MuiButton)`
-   
 `;
 
 
