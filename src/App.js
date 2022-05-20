@@ -28,10 +28,10 @@ function App() {
       <ThemeProvider theme={theme}>
       <div className="App">
           <Navbar>
-            <Button >BhenChoda</Button>
+            <Button>Swagat Hai</Button>
               <div>
-                  <Button variant="outlined">Budhapa</Button>
-                  <Button>Chutia</Button>
+                  <Button variant="outlined">Login</Button>
+                  <Button>Sign Up</Button>
               </div>
           </Navbar>
     </div>
