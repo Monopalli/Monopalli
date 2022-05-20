@@ -14,9 +14,9 @@ import CustomButton from '../Button/Button'
 const actions = ['Login', 'Sign Up'];
 
 const Header = () => {
-    const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(null);
+    const [anchorElNav, setAnchorElNav] = React.useState(null);
 
-    const handleOpenNavMenu = (event: React.MouseEvent<HTMLElement>) => {
+    const handleOpenNavMenu = (event) => {
         setAnchorElNav(event.currentTarget);
     };
 
