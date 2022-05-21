@@ -1,22 +1,9 @@
 import './App.css';
-import {createTheme, ThemeProvider} from "@mui/material";
+import {ThemeProvider} from "@mui/material";
 import * as React from "react";
 import Header from "./components/Header";
-
-
-const theme = createTheme({
-    palette: {
-        primary:{ main: "#2EDB4B",
-        contrastText: "#ffffff"},
-    },
-    typography: {
-        fontFamily: "'Inter', sans-serif",
-        button: {
-            textTransform: 'none'
-        }
-    },
-    shadows: ["none"]
-});
+import Hero from './components/Hero';
+import theme from './components/Theme';
 
 /*
 const Navbar = styled('div')`
@@ -35,6 +22,7 @@ function App() {
       <ThemeProvider theme={theme}>
       <div className="App">
           <Header/>
+          <Hero/>
     </div>
       </ThemeProvider>
   );
